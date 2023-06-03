@@ -14,7 +14,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/cloudflare/circl/group"
+	"go.bryk.io/circl/group"
 )
 
 const (

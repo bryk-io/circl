@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/sign"
-	"github.com/cloudflare/circl/sign/schemes"
+	"go.bryk.io/circl/sign"
+	"go.bryk.io/circl/sign/schemes"
 )
 
 func TestCaseSensitivity(t *testing.T) {

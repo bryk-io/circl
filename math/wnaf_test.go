@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"go.bryk.io/circl/internal/test"
 )
 
 func TestOmegaNAF(t *testing.T) {

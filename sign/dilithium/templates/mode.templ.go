@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
-	"github.com/cloudflare/circl/sign/dilithium/{{.Pkg}}"
+	"go.bryk.io/circl/sign/dilithium/internal/common"
+	"go.bryk.io/circl/sign/dilithium/{{.Pkg}}"
 )
 
 // {{.Impl}} implements the mode.Mode interface for {{.Name}}.

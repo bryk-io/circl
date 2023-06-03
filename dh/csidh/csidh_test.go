@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/cloudflare/circl/internal/test"
+	. "go.bryk.io/circl/internal/test"
 )
 
 // Possible values for "Status"

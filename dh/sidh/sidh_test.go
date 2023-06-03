@@ -8,8 +8,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/dh/sidh/internal/common"
-	. "github.com/cloudflare/circl/internal/test"
+	"go.bryk.io/circl/dh/sidh/internal/common"
+	. "go.bryk.io/circl/internal/test"
 )
 
 /* -------------------------------------------------------------------------
@@ -580,7 +580,7 @@ func BenchmarkSharedSecretBobP434(b *testing.B) {
 // Examples
 
 func ExamplePrivateKey() {
-	// import "github.com/cloudflare/circl/dh/sidh"
+	// import "go.bryk.io/circl/dh/sidh"
 
 	// Allice's key pair
 	prvA := NewPrivateKey(Fp503, KeyVariantSidhA)

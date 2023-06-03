@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"go.bryk.io/circl/internal/test"
 )
 
 func hexStr2Key(k *Key, s string) {

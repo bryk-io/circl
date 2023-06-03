@@ -13,9 +13,9 @@ import (
 	"io"
 
 	cryptoRand "crypto/rand"
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
-	cpapke "github.com/cloudflare/circl/pke/kyber/kyber1024"
+	"go.bryk.io/circl/internal/sha3"
+	"go.bryk.io/circl/kem"
+	cpapke "go.bryk.io/circl/pke/kyber/kyber1024"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/cloudflare/circl/kem"
+	"go.bryk.io/circl/kem"
 )
 
 type shortKEM struct {

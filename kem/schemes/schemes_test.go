@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/kem/schemes"
+	"go.bryk.io/circl/kem/schemes"
 )
 
 func TestCaseSensitivity(t *testing.T) {
@@ -140,7 +140,7 @@ func TestApi(t *testing.T) {
 }
 
 func Example_schemes() {
-	// import "github.com/cloudflare/circl/kem/schemes"
+	// import "go.bryk.io/circl/kem/schemes"
 
 	for _, sch := range schemes.All() {
 		fmt.Println(sch.Name())

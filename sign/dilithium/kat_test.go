@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/nist"
+	"go.bryk.io/circl/internal/nist"
 )
 
 func TestPQCgenKATSign(t *testing.T) {

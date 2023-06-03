@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
-	"github.com/cloudflare/circl/sign/dilithium/mode5"
+	"go.bryk.io/circl/sign/dilithium/internal/common"
+	"go.bryk.io/circl/sign/dilithium/mode5"
 )
 
 // implMode5 implements the mode.Mode interface for Dilithium5.

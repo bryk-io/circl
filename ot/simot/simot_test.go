@@ -9,7 +9,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/cloudflare/circl/group"
+	"go.bryk.io/circl/group"
 )
 
 const testSimOTCount = 100

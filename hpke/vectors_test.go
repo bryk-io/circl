@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/kem"
+	"go.bryk.io/circl/internal/test"
+	"go.bryk.io/circl/kem"
 	"golang.org/x/crypto/sha3"
 )
 

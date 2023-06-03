@@ -3,8 +3,8 @@ package oprf
 import (
 	"crypto/rand"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/zk/dleq"
+	"go.bryk.io/circl/group"
+	"go.bryk.io/circl/zk/dleq"
 )
 
 type client struct{ params }

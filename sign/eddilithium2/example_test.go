@@ -3,7 +3,7 @@ package eddilithium2_test
 import (
 	"fmt"
 
-	"github.com/cloudflare/circl/sign/eddilithium2"
+	"go.bryk.io/circl/sign/eddilithium2"
 )
 
 func Example() {

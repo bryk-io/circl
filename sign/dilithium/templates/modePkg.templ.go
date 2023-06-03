@@ -15,8 +15,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
-	"github.com/cloudflare/circl/sign/dilithium/{{.Pkg}}/internal"
+	"go.bryk.io/circl/sign/dilithium/internal/common"
+	"go.bryk.io/circl/sign/dilithium/{{.Pkg}}/internal"
 )
 
 const (

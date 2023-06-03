@@ -33,9 +33,9 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/cloudflare/circl/ecc/goldilocks"
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/sign"
+	"go.bryk.io/circl/ecc/goldilocks"
+	"go.bryk.io/circl/internal/sha3"
+	"go.bryk.io/circl/sign"
 )
 
 const (

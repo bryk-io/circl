@@ -3,9 +3,9 @@ package polynomial_test
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/math/polynomial"
+	"go.bryk.io/circl/group"
+	"go.bryk.io/circl/internal/test"
+	"go.bryk.io/circl/math/polynomial"
 )
 
 func TestPolyDegree(t *testing.T) {

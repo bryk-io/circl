@@ -7,10 +7,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/sign"
-	"github.com/cloudflare/circl/sign/dilithium/mode2"
-	"github.com/cloudflare/circl/sign/ed25519"
+	"go.bryk.io/circl/internal/sha3"
+	"go.bryk.io/circl/sign"
+	"go.bryk.io/circl/sign/dilithium/mode2"
+	"go.bryk.io/circl/sign/ed25519"
 )
 
 const (

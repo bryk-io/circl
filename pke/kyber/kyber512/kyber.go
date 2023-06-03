@@ -11,7 +11,7 @@ import (
 	cryptoRand "crypto/rand"
 	"io"
 
-	"github.com/cloudflare/circl/pke/kyber/kyber512/internal"
+	"go.bryk.io/circl/pke/kyber/kyber512/internal"
 )
 
 const (

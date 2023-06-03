@@ -5,7 +5,7 @@ package p751
 
 import (
 	"errors"
-	. "github.com/cloudflare/circl/dh/sidh/internal/common"
+	. "go.bryk.io/circl/dh/sidh/internal/common"
 	"math"
 )
 

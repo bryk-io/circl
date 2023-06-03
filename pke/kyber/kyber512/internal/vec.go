@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/pke/kyber/internal/common"
+	"go.bryk.io/circl/pke/kyber/internal/common"
 )
 
 // A vector of K polynomials

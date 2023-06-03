@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
+	"go.bryk.io/circl/sign/dilithium/internal/common"
 )
 
 // A vector of L polynomials.

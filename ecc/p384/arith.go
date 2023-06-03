@@ -6,7 +6,7 @@ package p384
 import (
 	"math/big"
 
-	"github.com/cloudflare/circl/internal/conv"
+	"go.bryk.io/circl/internal/conv"
 )
 
 const sizeFp = 48

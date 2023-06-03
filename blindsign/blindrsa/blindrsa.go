@@ -15,7 +15,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/cloudflare/circl/blindsign"
+	"go.bryk.io/circl/blindsign"
 )
 
 var errUnsupportedHashFunction = errors.New("unsupported hash function")

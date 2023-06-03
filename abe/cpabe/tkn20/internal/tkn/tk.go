@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	pairing "github.com/cloudflare/circl/ecc/bls12381"
+	pairing "go.bryk.io/circl/ecc/bls12381"
 )
 
 type PublicParams struct {

@@ -7,7 +7,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cloudflare/circl/xof"
+	"go.bryk.io/circl/xof"
 )
 
 type Expander interface {

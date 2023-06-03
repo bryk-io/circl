@@ -16,9 +16,9 @@ import (
 	"crypto/subtle"
 	"io"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
-	cpapke "github.com/cloudflare/circl/pke/kyber/{{.Pkg}}"
+	"go.bryk.io/circl/internal/sha3"
+	"go.bryk.io/circl/kem"
+	cpapke "go.bryk.io/circl/pke/kyber/{{.Pkg}}"
 	cryptoRand "crypto/rand"
 )
 

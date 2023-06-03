@@ -3,8 +3,8 @@ package common
 import (
 	"encoding/binary"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/simd/keccakf1600"
+	"go.bryk.io/circl/internal/sha3"
+	"go.bryk.io/circl/simd/keccakf1600"
 )
 
 // DeriveX4Available indicates whether the system supports the quick fourway

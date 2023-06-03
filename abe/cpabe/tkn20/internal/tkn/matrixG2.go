@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	pairing "github.com/cloudflare/circl/ecc/bls12381"
+	pairing "go.bryk.io/circl/ecc/bls12381"
 )
 
 // matrixG2 represents a matrix of G2 elements. They are stored in row-major order.

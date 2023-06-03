@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/nist"
-	"github.com/cloudflare/circl/kem/schemes"
+	"go.bryk.io/circl/internal/nist"
+	"go.bryk.io/circl/kem/schemes"
 )
 
 func TestPQCgenKATKem(t *testing.T) {

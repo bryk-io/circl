@@ -1,4 +1,4 @@
-module github.com/cloudflare/circl
+module go.bryk.io/circl
 
 go 1.19
 

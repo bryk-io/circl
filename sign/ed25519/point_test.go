@@ -5,7 +5,7 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"go.bryk.io/circl/internal/test"
 )
 
 func randomPoint(P *pointR1) {

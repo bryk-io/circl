@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/internal/test"
+	"go.bryk.io/circl/group"
+	"go.bryk.io/circl/internal/test"
 )
 
 type commonClient interface {

@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/hpke"
+	"go.bryk.io/circl/hpke"
 )
 
 func Example() {
-	// import "github.com/cloudflare/circl/hpke"
+	// import "go.bryk.io/circl/hpke"
 	// import "crypto/rand"
 
 	// HPKE suite is a domain parameter.

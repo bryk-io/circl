@@ -3,7 +3,7 @@ package bls12381
 import (
 	"fmt"
 
-	"github.com/cloudflare/circl/ecc/bls12381/ff"
+	"go.bryk.io/circl/ecc/bls12381/ff"
 )
 
 type isogG2Point struct{ x, y, z ff.Fp2 }
