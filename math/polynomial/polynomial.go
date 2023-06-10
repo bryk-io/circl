@@ -109,6 +109,15 @@ func (l LagrangePolynomial) Evaluate(x group.Scalar) group.Scalar {
 	return px
 }
 
+// Coefficient returns a deep-copy of the n-th polynomial's coefficient.
+// Note coefficients are sorted in ascending order with respect to the degree.
+func (p Polynomial) Coefficient(n uint) group.Scalar {
+	if int(n) >= len(p.c) {
+		panic("polynomial: invalid index for coefficient")
+	}
+	return p.c[n].Copy()
+}
+
 // LagrangeBase returns the j-th Lagrange polynomial base evaluated at x.
 // Thus, L_j(x) = \prod (x - x[i]) / (x[j] - x[i]) for 0 <= i < k, and i != j.
 func LagrangeBase(jth uint, xi []group.Scalar, x group.Scalar) group.Scalar {
