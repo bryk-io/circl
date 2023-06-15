@@ -33,6 +33,25 @@ type Commitment struct {
 	hiding, binding group.Element
 }
 
+func RestoreCommitment(g group.Group, data []byte) (*Commitment, error) {
+	var err error
+
+	// commitments are encoded as: `id || h || b`
+	id := g.NewScalar()
+	if err = id.UnmarshalBinary(data[0:32]); err != nil {
+		return nil, err
+	}
+	h := g.NewElement()
+	if err = h.UnmarshalBinary(data[32:64]); err != nil {
+		return nil, err
+	}
+	b := g.NewElement()
+	if err = b.UnmarshalBinary(data[64:96]); err != nil {
+		return nil, err
+	}
+	return &Commitment{ID: id, hiding: h, binding: b}, nil
+}
+
 func (c Commitment) MarshalBinary() ([]byte, error) {
 	id, err := c.ID.MarshalBinary()
 	if err != nil {

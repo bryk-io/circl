@@ -19,6 +19,22 @@ type PeerSigner struct {
 	myPubKey   *PublicKey
 }
 
+func RestorePeerSigner(s Suite, t, n uint, data []byte) (PeerSigner, error) {
+	share := vss.EmptyShare(s.g)
+	if err := share.UnmarshalBinary(data); err != nil {
+		return PeerSigner{}, err
+	}
+	peer := PeerSigner{
+		Suite:      s,
+		threshold:  uint16(t),
+		maxSigners: uint16(n),
+		keyShare:   share,
+		myPubKey:   nil,
+	}
+	_ = peer.Public() // force public key generation
+	return peer, nil
+}
+
 func (p PeerSigner) Commit(rnd io.Reader) (*Nonce, *Commitment, error) {
 	hidingNonce, err := p.Suite.nonceGenerate(rnd, p.keyShare.Value)
 	if err != nil {
@@ -30,6 +46,10 @@ func (p PeerSigner) Commit(rnd io.Reader) (*Nonce, *Commitment, error) {
 	}
 
 	return p.commitWithNonce(hidingNonce, bindingNonce)
+}
+
+func (p PeerSigner) MarshalBinary() ([]byte, error) {
+	return p.keyShare.MarshalBinary()
 }
 
 func (p PeerSigner) commitWithNonce(hidingNonce, bindingNonce group.Scalar) (*Nonce, *Commitment, error) {
@@ -74,6 +94,18 @@ type SignShare struct {
 	s vss.Share
 }
 
+func RestoreSignShare(g group.Group, data []byte) (*SignShare, error) {
+	s := vss.EmptyShare(g)
+	if err := s.UnmarshalBinary(data); err != nil {
+		return nil, err
+	}
+	return &SignShare{s}, nil
+}
+
+func (s *SignShare) MarshalBinary() ([]byte, error) {
+	return s.s.MarshalBinary()
+}
+
 func (s *SignShare) Verify(
 	suite Suite,
 	pubKeySigner *PublicKey,
@@ -82,7 +114,7 @@ func (s *SignShare) Verify(
 	pubKeyGroup *PublicKey,
 	msg []byte,
 ) bool {
-	if s.s.ID != comSigner.ID || s.s.ID.IsZero() {
+	if !s.s.ID.IsEqual(comSigner.ID) || s.s.ID.IsZero() {
 		return false
 	}
 

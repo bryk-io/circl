@@ -19,6 +19,15 @@ func TestSecretSharing(tt *testing.T) {
 	test.CheckOk(len(shares) == int(n), "bad num shares", tt)
 	verifiers := ss.CommitSecret()
 
+	// encode/decode share
+	sb, err := shares[0].MarshalBinary()
+	test.CheckNoErr(tt, err, "failed to marshal share")
+	rs := EmptyShare(g)
+	err = rs.UnmarshalBinary(sb)
+	test.CheckNoErr(tt, err, "failed to unmarshal share")
+	rs.ID.IsEqual(shares[0].ID)
+	rs.Value.IsEqual(shares[0].Value)
+
 	tt.Run("subsetSize", func(ttt *testing.T) {
 		// Test any possible subset size.
 		for k := 0; k <= int(n); k++ {
