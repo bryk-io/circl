@@ -1,6 +1,6 @@
 package simot
 
-import "go.bryk.io/circl/group"
+import "github.com/cloudflare/circl/group"
 
 type Sender struct {
 	index   int           // Indicate which OT

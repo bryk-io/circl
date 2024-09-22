@@ -15,7 +15,7 @@ import (
 	"os"
 	"testing"
 
-	"go.bryk.io/circl/blindsign"
+	"github.com/cloudflare/circl/blindsign"
 )
 
 // 4096-bit RSA private key

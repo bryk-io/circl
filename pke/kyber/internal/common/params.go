@@ -1,7 +1,7 @@
 package common
 
 import (
-	"go.bryk.io/circl/pke/kyber/internal/common/params"
+	"github.com/cloudflare/circl/pke/kyber/internal/common/params"
 )
 
 const (

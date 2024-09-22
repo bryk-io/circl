@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // EltG is a group element.

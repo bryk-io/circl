@@ -3,9 +3,9 @@ package internal
 import (
 	"encoding/binary"
 
-	"go.bryk.io/circl/internal/sha3"
-	"go.bryk.io/circl/sign/dilithium/internal/common"
-	"go.bryk.io/circl/simd/keccakf1600"
+	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/cloudflare/circl/sign/dilithium/internal/common"
+	"github.com/cloudflare/circl/simd/keccakf1600"
 )
 
 // DeriveX4Available indicates whether the system supports the quick fourway

@@ -20,7 +20,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"go.bryk.io/circl/group"
+	"github.com/cloudflare/circl/group"
 )
 
 type Proof struct {

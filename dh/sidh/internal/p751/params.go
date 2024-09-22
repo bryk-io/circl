@@ -3,7 +3,7 @@ package p751
 //go:generate go run ../templates/gen.go P751
 
 import (
-	"go.bryk.io/circl/dh/sidh/internal/common"
+	"github.com/cloudflare/circl/dh/sidh/internal/common"
 	"golang.org/x/sys/cpu"
 )
 

@@ -54,8 +54,8 @@ import (
 	"io"
 	"math"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/zk/dleq"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/zk/dleq"
 )
 
 const (

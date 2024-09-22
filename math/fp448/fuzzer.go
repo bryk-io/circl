@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // FuzzReduction is a fuzzer target for red64 function, which reduces t

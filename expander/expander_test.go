@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"testing"
 
-	"go.bryk.io/circl/expander"
-	"go.bryk.io/circl/internal/test"
-	"go.bryk.io/circl/xof"
+	"github.com/cloudflare/circl/expander"
+	"github.com/cloudflare/circl/internal/test"
+	"github.com/cloudflare/circl/xof"
 )
 
 func TestExpander(t *testing.T) {

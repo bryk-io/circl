@@ -9,8 +9,8 @@ package xof
 import (
 	"io"
 
-	"go.bryk.io/circl/internal/sha3"
-	"go.bryk.io/circl/xof/k12"
+	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/cloudflare/circl/xof/k12"
 
 	"golang.org/x/crypto/blake2b"
 	"golang.org/x/crypto/blake2s"

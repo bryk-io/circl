@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	pairing "go.bryk.io/circl/ecc/bls12381"
-	"go.bryk.io/circl/ecc/bls12381/ff"
+	pairing "github.com/cloudflare/circl/ecc/bls12381"
+	"github.com/cloudflare/circl/ecc/bls12381/ff"
 )
 
 func TestSampleDlin(t *testing.T) {

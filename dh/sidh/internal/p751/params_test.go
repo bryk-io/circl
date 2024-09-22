@@ -4,7 +4,7 @@ package p751
 import (
 	"testing/quick"
 
-	. "go.bryk.io/circl/dh/sidh/internal/common"
+	. "github.com/cloudflare/circl/dh/sidh/internal/common"
 )
 
 var (

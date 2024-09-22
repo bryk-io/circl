@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	"go.bryk.io/circl/sign/dilithium/internal/common/params"
+	"github.com/cloudflare/circl/sign/dilithium/internal/common/params"
 )
 
 type Mode struct {

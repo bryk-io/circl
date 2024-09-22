@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func TestSecretSharing(tt *testing.T) {

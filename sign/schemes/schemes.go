@@ -11,11 +11,11 @@ package schemes
 import (
 	"strings"
 
-	"go.bryk.io/circl/sign"
-	"go.bryk.io/circl/sign/ed25519"
-	"go.bryk.io/circl/sign/ed448"
-	"go.bryk.io/circl/sign/eddilithium2"
-	"go.bryk.io/circl/sign/eddilithium3"
+	"github.com/cloudflare/circl/sign"
+	"github.com/cloudflare/circl/sign/ed25519"
+	"github.com/cloudflare/circl/sign/ed448"
+	"github.com/cloudflare/circl/sign/eddilithium2"
+	"github.com/cloudflare/circl/sign/eddilithium3"
 )
 
 var allSchemes = [...]sign.Scheme{

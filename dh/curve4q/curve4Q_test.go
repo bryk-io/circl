@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func TestDH(t *testing.T) {

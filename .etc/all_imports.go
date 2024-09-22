@@ -25,7 +25,7 @@ func main() {
 	defer f.Close()
 
 	skipDirs := []string{".", "testdata", "internal", "templates"}
-	circl := "go.bryk.io/circl/"
+	circl := "github.com/cloudflare/circl/"
 
 	fmt.Fprintln(f, "package main")
 	err = fs.WalkDir(os.DirFS("."), ".", func(path string, d fs.DirEntry, err error) error {

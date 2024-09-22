@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
-	"go.bryk.io/circl/dh/sidh/internal/common"
-	"go.bryk.io/circl/internal/sha3"
+	"github.com/cloudflare/circl/dh/sidh/internal/common"
+	"github.com/cloudflare/circl/internal/sha3"
 )
 
 // SIKE KEM interface.

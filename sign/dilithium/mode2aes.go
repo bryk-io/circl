@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"go.bryk.io/circl/sign/dilithium/internal/common"
-	"go.bryk.io/circl/sign/dilithium/mode2aes"
+	"github.com/cloudflare/circl/sign/dilithium/internal/common"
+	"github.com/cloudflare/circl/sign/dilithium/mode2aes"
 )
 
 // implMode2AES implements the mode.Mode interface for Dilithium2-AES.

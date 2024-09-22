@@ -8,8 +8,8 @@ import (
 	"math/big"
 
 	r255 "github.com/bwesterb/go-ristretto"
-	"go.bryk.io/circl/expander"
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/expander"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // Ristretto255 is a quotient group generated from the edwards25519 curve.

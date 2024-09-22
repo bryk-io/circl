@@ -19,7 +19,7 @@ import (
 	"errors"
 	"io"
 
-	"go.bryk.io/circl/kem"
+	"github.com/cloudflare/circl/kem"
 )
 
 const versionLabel = "HPKE-v1"

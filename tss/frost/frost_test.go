@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
-	"go.bryk.io/circl/tss/frost"
+	"github.com/cloudflare/circl/internal/test"
+	"github.com/cloudflare/circl/tss/frost"
 )
 
 func TestFrost(t *testing.T) {

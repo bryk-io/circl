@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"go.bryk.io/circl/sign/dilithium/internal/common"
+	"github.com/cloudflare/circl/sign/dilithium/internal/common"
 )
 
 // Checks whether p is normalized.  Only used in tests.

@@ -46,7 +46,7 @@ import (
 	"io"
 	"strconv"
 
-	"go.bryk.io/circl/sign"
+	"github.com/cloudflare/circl/sign"
 )
 
 const (

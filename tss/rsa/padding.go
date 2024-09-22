@@ -5,8 +5,8 @@ import (
 	"crypto/rsa"
 	"io"
 
-	"go.bryk.io/circl/tss/rsa/internal"
-	pss2 "go.bryk.io/circl/tss/rsa/internal/pss"
+	"github.com/cloudflare/circl/tss/rsa/internal"
+	pss2 "github.com/cloudflare/circl/tss/rsa/internal/pss"
 )
 
 type Padder interface {

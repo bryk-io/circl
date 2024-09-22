@@ -6,7 +6,7 @@ import (
 	"flag"
 	"testing"
 
-	"go.bryk.io/circl/sign/dilithium/internal/common"
+	"github.com/cloudflare/circl/sign/dilithium/internal/common"
 )
 
 var runVeryLongTest = flag.Bool("very-long", false, "runs very long tests")

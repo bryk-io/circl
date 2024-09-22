@@ -9,7 +9,7 @@ import (
 	"math/big"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func TestFpCmov(t *testing.T) {

@@ -5,7 +5,7 @@ package p503
 
 import (
 	crand "crypto/rand"
-	. "go.bryk.io/circl/dh/sidh/internal/common"
+	. "github.com/cloudflare/circl/dh/sidh/internal/common"
 )
 
 // -----------------------------------------------------------------------------

@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"encoding/asn1"
 
-	"go.bryk.io/circl/sign"
+	"github.com/cloudflare/circl/sign"
 )
 
 var sch sign.Scheme = &scheme{}

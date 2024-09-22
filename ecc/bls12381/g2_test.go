@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"go.bryk.io/circl/ecc/bls12381/ff"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/ecc/bls12381/ff"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func randomG2(t testing.TB) *G2 {

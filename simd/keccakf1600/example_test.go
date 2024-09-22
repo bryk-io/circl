@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"go.bryk.io/circl/internal/sha3"
-	"go.bryk.io/circl/simd/keccakf1600"
+	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/cloudflare/circl/simd/keccakf1600"
 )
 
 func Example() {

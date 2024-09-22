@@ -5,8 +5,8 @@ import (
 	"crypto/subtle"
 	"fmt"
 
-	"go.bryk.io/circl/ecc/bls12381/ff"
-	"go.bryk.io/circl/expander"
+	"github.com/cloudflare/circl/ecc/bls12381/ff"
+	"github.com/cloudflare/circl/expander"
 )
 
 // G2Size is the length in bytes of an element in G2 in uncompressed form..

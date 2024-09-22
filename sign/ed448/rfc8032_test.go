@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
-	"go.bryk.io/circl/sign/ed448"
+	"github.com/cloudflare/circl/internal/test"
+	"github.com/cloudflare/circl/sign/ed448"
 )
 
 type vector struct {

@@ -8,7 +8,7 @@ import (
 	"errors"
 	"io"
 
-	"go.bryk.io/circl/group"
+	"github.com/cloudflare/circl/group"
 	"golang.org/x/crypto/sha3"
 )
 

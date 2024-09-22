@@ -5,7 +5,7 @@ package p434
 
 import (
 	"errors"
-	. "go.bryk.io/circl/dh/sidh/internal/common"
+	. "github.com/cloudflare/circl/dh/sidh/internal/common"
 	"math"
 )
 

@@ -3,7 +3,7 @@ package ed25519_test
 import (
 	"testing"
 
-	"go.bryk.io/circl/sign/ed25519"
+	"github.com/cloudflare/circl/sign/ed25519"
 )
 
 type zeroReader struct{}

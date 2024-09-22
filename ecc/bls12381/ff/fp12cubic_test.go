@@ -3,7 +3,7 @@ package ff
 import (
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func TestFP12CubicAdd(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"go.bryk.io/circl/internal/conv"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func (P *pointR1) random() {

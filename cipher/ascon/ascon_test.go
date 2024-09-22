@@ -11,8 +11,8 @@ import (
 	"sync"
 	"testing"
 
-	"go.bryk.io/circl/cipher/ascon"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/cipher/ascon"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 type vector struct {

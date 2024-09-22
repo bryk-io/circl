@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
-	"go.bryk.io/circl/xof"
+	"github.com/cloudflare/circl/internal/test"
+	"github.com/cloudflare/circl/xof"
 )
 
 type vector struct {

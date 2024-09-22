@@ -9,7 +9,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func randomAffine() *affinePoint {

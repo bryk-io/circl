@@ -3,7 +3,7 @@ package fourq
 import (
 	"math/big"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // Size of scalars used for point multiplication.

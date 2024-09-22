@@ -4,7 +4,7 @@ package fp448
 import (
 	"errors"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // Size in bytes of an element.

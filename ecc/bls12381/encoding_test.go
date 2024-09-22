@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func isEqual(p, q interface{}) bool {

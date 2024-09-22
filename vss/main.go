@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/math/polynomial"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/math/polynomial"
 )
 
 // Share represents a share of a secret.

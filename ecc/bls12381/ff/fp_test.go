@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func randomFp(t testing.TB) *Fp {

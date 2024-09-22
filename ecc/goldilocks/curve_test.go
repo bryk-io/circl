@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"go.bryk.io/circl/ecc/goldilocks"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/ecc/goldilocks"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 func TestScalarMult(t *testing.T) {

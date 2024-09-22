@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/zk/dl"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/zk/dl"
 )
 
 const testzkDLCount = 1 << 8

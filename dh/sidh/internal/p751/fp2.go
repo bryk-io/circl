@@ -4,7 +4,7 @@
 package p751
 
 import (
-	"go.bryk.io/circl/dh/sidh/internal/common"
+	"github.com/cloudflare/circl/dh/sidh/internal/common"
 )
 
 // Montgomery multiplication. Input values must be already

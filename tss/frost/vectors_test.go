@@ -9,9 +9,9 @@ import (
 	"os"
 	"testing"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/internal/test"
-	"go.bryk.io/circl/vss"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/internal/test"
+	"github.com/cloudflare/circl/vss"
 )
 
 type vector struct {

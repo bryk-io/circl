@@ -6,7 +6,7 @@ import (
 	"io"
 	"sort"
 
-	"go.bryk.io/circl/group"
+	"github.com/cloudflare/circl/group"
 )
 
 type Nonce struct {

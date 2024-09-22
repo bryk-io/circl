@@ -7,7 +7,7 @@ import (
 	"crypto/subtle"
 	"math/big"
 
-	"go.bryk.io/circl/math"
+	"github.com/cloudflare/circl/math"
 )
 
 type curve struct{}

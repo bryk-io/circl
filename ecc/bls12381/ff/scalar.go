@@ -3,7 +3,7 @@ package ff
 import (
 	"io"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 // ScalarSize is the length in bytes of a Scalar.

@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"go.bryk.io/circl/internal/sha3"
-	"go.bryk.io/circl/pke/kyber/internal/common"
+	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/cloudflare/circl/pke/kyber/internal/common"
 )
 
 // A Kyber.CPAPKE private key.

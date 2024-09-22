@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"go.bryk.io/circl/sign/eddilithium3"
+	"github.com/cloudflare/circl/sign/eddilithium3"
 )
 
 func BenchmarkVerify(b *testing.B) {

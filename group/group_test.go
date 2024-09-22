@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/internal/test"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/internal/test"
 )
 
 var allGroups = []group.Group{

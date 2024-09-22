@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"go.bryk.io/circl/internal/sha3"
+	"github.com/cloudflare/circl/internal/sha3"
 )
 
 func hexHash(in []byte) string {

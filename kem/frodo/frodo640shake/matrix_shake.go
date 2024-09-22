@@ -1,7 +1,7 @@
 package frodo640shake
 
 import (
-	"go.bryk.io/circl/internal/sha3"
+	"github.com/cloudflare/circl/internal/sha3"
 )
 
 func expandSeedIntoA(A *nByNU16, seed *[seedASize]byte, xof *sha3.State) {

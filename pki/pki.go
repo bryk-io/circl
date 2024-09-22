@@ -7,8 +7,8 @@ import (
 	"errors"
 	"strings"
 
-	"go.bryk.io/circl/sign"
-	"go.bryk.io/circl/sign/schemes"
+	"github.com/cloudflare/circl/sign"
+	"github.com/cloudflare/circl/sign/schemes"
 )
 
 var (

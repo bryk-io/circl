@@ -2,7 +2,7 @@
 //
 // A register of schemes is available in the package
 //
-//	go.bryk.io/circl/sign/schemes
+//	github.com/cloudflare/circl/sign/schemes
 package sign
 
 import (

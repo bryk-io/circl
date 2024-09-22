@@ -6,9 +6,9 @@ import (
 	"io"
 	"sort"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/math/polynomial"
-	"go.bryk.io/circl/vss"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/math/polynomial"
+	"github.com/cloudflare/circl/vss"
 )
 
 type PeerSigner struct {

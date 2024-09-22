@@ -1,9 +1,9 @@
-module go.bryk.io/circl/pke/kyber/internal/common/asm
+module github.com/cloudflare/circl/pke/kyber/internal/common/asm
 
 go 1.19
 
 require (
-	go.bryk.io/circl v1.3.3
+	github.com/cloudflare/circl v1.3.3
 	github.com/mmcloughlin/avo v0.5.0
 )
 
@@ -13,4 +13,4 @@ require (
 	golang.org/x/tools v0.9.1 // indirect
 )
 
-replace go.bryk.io/circl => ../../../../../
+replace github.com/cloudflare/circl => ../../../../../

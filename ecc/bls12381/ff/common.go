@@ -8,7 +8,7 @@ import (
 	"io"
 	"math/big"
 
-	"go.bryk.io/circl/internal/conv"
+	"github.com/cloudflare/circl/internal/conv"
 )
 
 var (

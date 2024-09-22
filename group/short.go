@@ -10,8 +10,8 @@ import (
 	"io"
 	"math/big"
 
-	"go.bryk.io/circl/ecc/p384"
-	"go.bryk.io/circl/expander"
+	"github.com/cloudflare/circl/ecc/p384"
+	"github.com/cloudflare/circl/expander"
 )
 
 var (

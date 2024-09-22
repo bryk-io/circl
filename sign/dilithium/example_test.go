@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"go.bryk.io/circl/sign/dilithium"
+	"github.com/cloudflare/circl/sign/dilithium"
 )
 
 func Example() {

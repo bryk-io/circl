@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	r255 "github.com/bwesterb/go-ristretto"
-	"go.bryk.io/circl/group"
+	"github.com/cloudflare/circl/group"
 )
 
 var (

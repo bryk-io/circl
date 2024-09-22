@@ -9,7 +9,7 @@ import (
 	"testing"
 	"testing/quick"
 
-	"go.bryk.io/circl/dh/sidh/internal/common"
+	"github.com/cloudflare/circl/dh/sidh/internal/common"
 )
 
 type testParams struct {

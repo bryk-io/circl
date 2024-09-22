@@ -1,6 +1,6 @@
 package curve4q
 
-import "go.bryk.io/circl/ecc/fourq"
+import "github.com/cloudflare/circl/ecc/fourq"
 
 // Size is the size in bytes of keys.
 const Size = 32

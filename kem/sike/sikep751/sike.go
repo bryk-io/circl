@@ -15,9 +15,9 @@ import (
 	"crypto/subtle"
 	"io"
 
-	"go.bryk.io/circl/dh/sidh"
-	"go.bryk.io/circl/internal/sha3"
-	"go.bryk.io/circl/kem"
+	"github.com/cloudflare/circl/dh/sidh"
+	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/cloudflare/circl/kem"
 )
 
 // Deprecated: not cryptographically secure.

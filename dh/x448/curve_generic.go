@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"math/bits"
 
-	"go.bryk.io/circl/math/fp448"
+	"github.com/cloudflare/circl/math/fp448"
 )
 
 func doubleGeneric(x, z *fp448.Elt) {

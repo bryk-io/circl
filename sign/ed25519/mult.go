@@ -5,9 +5,9 @@ import (
 	"encoding/binary"
 	"math/bits"
 
-	"go.bryk.io/circl/internal/conv"
-	"go.bryk.io/circl/math"
-	fp "go.bryk.io/circl/math/fp25519"
+	"github.com/cloudflare/circl/internal/conv"
+	"github.com/cloudflare/circl/math"
+	fp "github.com/cloudflare/circl/math/fp25519"
 )
 
 var paramD = fp.Elt{

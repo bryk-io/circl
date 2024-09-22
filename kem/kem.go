@@ -2,7 +2,7 @@
 //
 // A register of schemes is available in the package
 //
-//	go.bryk.io/circl/kem/schemes
+//	github.com/cloudflare/circl/kem/schemes
 package kem
 
 import (

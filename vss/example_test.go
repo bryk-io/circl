@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"fmt"
 
-	"go.bryk.io/circl/group"
+	"github.com/cloudflare/circl/group"
 )
 
 func ExampleSecretSharing() {

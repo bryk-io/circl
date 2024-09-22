@@ -5,8 +5,8 @@ import (
 	"io"
 	"sort"
 
-	"go.bryk.io/circl/group"
-	"go.bryk.io/circl/vss"
+	"github.com/cloudflare/circl/group"
+	"github.com/cloudflare/circl/vss"
 )
 
 type PrivateKey struct {
