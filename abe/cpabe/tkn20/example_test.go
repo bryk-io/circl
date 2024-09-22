@@ -50,7 +50,7 @@ func checkPolicy(in map[string][]string) bool {
 
 func Example() {
 	policyStr := `(occupation: doctor) and (country: US)`
-	invalidPolicyStr := `(ocupation: doctor) and (country: pacific)`
+	invalidPolicyStr := `(title: doctor) and (country: pacific)`
 	msgStr := `must have the precious 🎃`
 	wrongAttrsMap := map[string]string{"occupation": "doctor", "country": "croatia"}
 	rightAttrsMap := map[string]string{"occupation": "doctor", "country": "US", "age": "16"}
@@ -84,6 +84,8 @@ func Example() {
 	if err != nil {
 		log.Fatalf("%s", err)
 	}
+	fmt.Printf("plaintext size: %v bytes\n", len(msgStr))
+	fmt.Printf("ciphertext size: %v bytes\n", len(ct))
 
 	// generate secret key for certain set of attributes
 	wrongAttrs := cpabe.Attributes{}
@@ -124,9 +126,12 @@ func Example() {
 		log.Fatalf("decryption using right attrs should have succeeded, plaintext: %s", pt)
 	}
 	if !bytes.Equal(pt, []byte(msgStr)) {
-		log.Fatalf("recoverd plaintext: %s is not equal to original msg: %s", pt, msgStr)
+		log.Fatalf("recovered plaintext: %s is not equal to original msg: %s", pt, msgStr)
 	}
 	fmt.Println("Successfully recovered plaintext")
-	// Output: (occupation:doctor and country:US)
+	// Output:
+	// (occupation:doctor and country:US)
+	// plaintext size: 27 bytes
+	// ciphertext size: 2747 bytes
 	// Successfully recovered plaintext
 }

@@ -155,9 +155,13 @@ func Example_schemes() {
 	// Kyber512
 	// Kyber768
 	// Kyber1024
+	// ML-KEM-512
+	// ML-KEM-768
+	// ML-KEM-1024
 	// Kyber512-X25519
 	// Kyber768-X25519
 	// Kyber768-X448
 	// Kyber1024-X448
 	// P256Kyber768Draft00
+	// X25519MLKEM768
 }

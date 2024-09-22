@@ -34,6 +34,12 @@ func (g *G1) SetBytes(b []byte) error {
 		return errInputLength
 	}
 
+	// Check for invalid prefixes
+	switch b[0] & 0xE0 {
+	case 0x20, 0x60, 0xE0:
+		return errEncoding
+	}
+
 	isCompressed := int((b[0] >> 7) & 0x1)
 	isInfinity := int((b[0] >> 6) & 0x1)
 	isBigYCoord := int((b[0] >> 5) & 0x1)
@@ -44,7 +50,7 @@ func (g *G1) SetBytes(b []byte) error {
 			l = G1SizeCompressed
 		}
 		zeros := make([]byte, l-1)
-		if (b[0]&0x1F) != 0 || subtle.ConstantTimeCompare(b[1:], zeros) != 1 {
+		if (b[0]&0x1F) != 0 || subtle.ConstantTimeCompare(b[1:l], zeros) != 1 {
 			return errEncoding
 		}
 		g.SetIdentity()
@@ -392,7 +398,8 @@ func G1Generator() *G1 {
 }
 
 // affinize converts an entire slice to affine at once
-func affinize(points []*G1) {
+func affinize(points []*G1) (out []G1) {
+	out = make([]G1, len(points))
 	if len(points) == 0 {
 		return
 	}
@@ -410,8 +417,9 @@ func affinize(points []*G1) {
 		zinv.Mul(w, &ws[i])
 		w.Mul(w, &points[i].z)
 
-		points[i].x.Mul(&points[i].x, zinv)
-		points[i].y.Mul(&points[i].y, zinv)
-		points[i].z.SetOne()
+		out[i].x.Mul(&points[i].x, zinv)
+		out[i].y.Mul(&points[i].y, zinv)
+		out[i].z.SetOne()
 	}
+	return
 }

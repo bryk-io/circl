@@ -143,6 +143,13 @@ func TestG1Serial(t *testing.T) {
 			want = *randomG1(t)
 		}
 	})
+	t.Run("badPrefix", func(t *testing.T) {
+		q := new(G1)
+		b := make([]byte, G1Size)
+		for _, b[0] = range []byte{0x20, 0x60, 0xE0} {
+			test.CheckIsErr(t, q.SetBytes(b), mustErr)
+		}
+	})
 	t.Run("badLength", func(t *testing.T) {
 		q := new(G1)
 		p := randomG1(t)
@@ -218,17 +225,14 @@ func TestG1Affinize(t *testing.T) {
 	N := 20
 	testTimes := 1 << 6
 	g1 := make([]*G1, N)
-	g2 := make([]*G1, N)
 	for i := 0; i < testTimes; i++ {
 		for j := 0; j < N; j++ {
 			g1[j] = randomG1(t)
-			g2[j] = &G1{}
-			*g2[j] = *g1[j]
 		}
-		affinize(g2)
+		g2 := affinize(g1)
 		for j := 0; j < N; j++ {
 			g1[j].toAffine()
-			if !g1[j].IsEqual(g2[j]) {
+			if !g1[j].IsEqual(&g2[j]) {
 				t.Fatal("failure to preserve points")
 			}
 			if g2[j].z.IsEqual(&g1[j].z) != 1 {
